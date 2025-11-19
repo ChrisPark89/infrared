@@ -49,7 +49,7 @@ def send_http_request():
         if response.status_code == 200:
             print("HTTP request sent successfully.")
         else:
-            print(f"Failed HTTP request. Status: {response.status_code}")
+            print("Failed to send HTTP request. Status code: {}".format(response.status_code))
             print("Response:", response.text)
 
     except Exception as e:
