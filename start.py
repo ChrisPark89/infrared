@@ -51,9 +51,8 @@ def send_http_request():
         else:
             print("Failed to send HTTP request. Status code: {}".format(response.status_code))
             print("Response:", response.text)
-
     except Exception as e:
-        print(f"Error sending HTTP request: {e}")
+        print("Error sending HTTP request: {}".format(e))
 
 
 # GPIO callback (Pi only)
